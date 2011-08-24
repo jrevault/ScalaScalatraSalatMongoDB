@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="compiler-interface-src">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/project/boot/scala-2.8.1/org.scala-tools.sbt/sbt/0.10.0/compiler-interface-src/jline-0.9.94.jar!/" />
+      <root url="jar://$PROJECT_DIR$/project/boot/scala-2.8.1/org.scala-tools.sbt/sbt/0.10.0/compiler-interface-src/compiler-interface-src-0.10.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

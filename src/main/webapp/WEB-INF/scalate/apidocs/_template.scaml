@@ -1,0 +1,35 @@
+!!!
+%html
+  %head
+    %title SSM APIDOCS : ###URL_PATH###
+  %body
+    #content
+      %h1 SSM APIDOCS : ###URL_PATH###
+
+      #baseurl
+        http://ledruide.com/api/###URL_PATH_{AND}_{PARAMS}###
+
+      %h2
+        Description
+      %p
+        ###FUNCTIONNAL DESCRIPTION"""
+
+      %h2
+        Parameters
+      %p
+        ###PARAMETERS_AWAITED###
+
+        %ul
+          %li ###PARAM_1### = ###PARAM_1_DESC###
+          %li ###PARAM_2### = ###PARAM_2_DESC###
+          %li ###PARAM_N### = ###PARAM_N_DESC###
+
+      %h2
+        Example
+      %p
+        http://ledruide.com/api/###SAMPLE_PARAMS###
+
+      %h2
+        Returns
+      %p
+        ###OUTPUT_DESCRIPTION###

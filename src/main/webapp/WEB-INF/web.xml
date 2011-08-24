@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xmlns="http://java.sun.com/xml/ns/javaee"
+         xmlns:web="http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd"
+         xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd"
+         version="2.4">
+
+  <!-- ****************************** -->
+  <!-- Bases URL : docs, 404 ...      -->
+  <filter>
+    <filter-name>SSM_base</filter-name>
+    <filter-class>fr.quidquid.rest.SSMBaseFilter</filter-class>
+  </filter>
+  <filter-mapping>
+    <filter-name>SSM_base</filter-name>
+    <url-pattern>/*</url-pattern>
+  </filter-mapping>
+
+  <!-- ************************************************************ -->
+  <!-- ****                 API FILTERS URL                    **** -->
+  <!-- ***                                                      *** -->
+
+  <!-- USER -->
+  <filter>
+    <filter-name>SSM_user</filter-name>
+    <filter-class>fr.quidquid.rest.SSMUserFilter</filter-class>
+  </filter>
+  <filter-mapping>
+    <filter-name>SSM_user</filter-name>
+    <url-pattern>/api/user/*</url-pattern>
+  </filter-mapping>
+
+  <!-- ***                                                      *** -->
+  <!-- ****                 API FILTERS URL                    **** -->
+  <!-- ************************************************************ -->
+
+  <!-- ************************************************************ -->
+  <!-- ****                 DOC FILTERS URL                    **** -->
+  <!-- ***                                                      *** -->
+
+  <!-- USER -->
+  <filter>
+    <filter-name>SSM_user_doc</filter-name>
+    <filter-class>fr.quidquid.rest.doc.SSMUserDocFilter</filter-class>
+  </filter>
+  <filter-mapping>
+    <filter-name>SSM_user_doc</filter-name>
+    <url-pattern>/doc/user/*</url-pattern>
+  </filter-mapping>
+
+  <!-- ***                                                      *** -->
+  <!-- ****                 API FILTERS URL                    **** -->
+  <!-- ************************************************************ -->
+
+</web-app>

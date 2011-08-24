@@ -1,0 +1,33 @@
+%html
+  %head
+    %title SSM APIDOCS : /api/user/add
+  %body
+    #content
+      %h1 SSM APIDOCS : /api/user/add
+
+      #baseurl
+        http://ledruide.com/api/user/add/{email}/{login}/{password}
+
+      %h2
+        Description
+      %p
+        Creates a user into the system.
+
+      %h2
+        Parameters
+      %p
+        Parameter awaited are:
+        %ul
+          %li email = The email of the user
+          %li login = The login of the user, must be composed...
+          %li password = The password of the user
+
+      %h2
+        Example
+      %p
+        http://ledruide.com/api/my_email@my_tremendous_provider.com/MyLoGin/MySeCrEtPaSsWoRd
+
+      %h2
+        Returns
+      %p
+        the complete user object
