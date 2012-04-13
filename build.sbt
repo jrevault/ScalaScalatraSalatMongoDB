@@ -16,7 +16,6 @@ libraryDependencies ++= Seq(
   "org.scalatra" %% "scalatra" % "2.0.2",
   "org.scalatra" %% "scalatra-scalate" % "2.0.2",
   "org.eclipse.jetty" % "jetty-webapp" % "7.4.5.v20110725" % "container",
-  //"org.mortbay.jetty" % "jetty" % "7.0.0.pre5" % "jetty",
   "org.slf4j" % "slf4j-api" % "1.6.1"
 )
 
